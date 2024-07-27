@@ -16,8 +16,42 @@
             </div>
             <div class="contentPanel">
                 <form>
-                    <label for="firstname">First Name</label>
-                    <input id="firstname" name="firstname" type="text" placeholder="Shivane">
+                    <fieldset>
+                    <p>Let's Do This!</p>
+                    <div class="firstRow">
+                        <div class="firstnameDiv">
+                        <label for="firstname">*First Name</label>
+                        <input id="firstname" name="firstname" type="text" placeholder="Shivane">
+                        </div>
+                        <div class="lastnameDiv">
+                        <label for="lastname">*Last Name</label>
+                        <input id="lastname" name="lastname" type="text" placeholder="Rana">
+                        </div>
+                    </div>
+                    <div class="secondRow">
+                        <div class="emailDiv">
+                        <label for="email">*Email</label>
+                        <input required type="email" id="email" name="email" placeholder="xyz@gmail.com">
+                        </div>
+                        <div class="phonenumberDiv">
+                        <label for="phonenumber">*Phone Number</label>
+                        <input required type="text" id="phonenumber" name="phonenumber" placeholder="xx-xxxx-xxxx">
+                        </div>
+                    </div>
+                    <div class="thirdRow">
+                        <div class="password0Div">
+                        <label for="password0">*Password</label>
+                        <input required type="password" id="password0" name="password0" placeholder="qwertyuiop">
+                        </div>
+                        <div class="password1Div">
+                        <label for="password1">*Confirm Password</label>
+                        <input required type="password" id="password1" name="password1" placeholder="qwertyuiop"> 
+                        </div>
+                    </div>
+                    </fieldset>
+                    <button type="submit">Create Account</button>
+                    <button type="reset">Reset</button>
+                    <p>Already Have an Account? <a href="www.example.com" target="_blank">Log in</a></p>
                 </form>
             </div>
         </div>
