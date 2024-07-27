@@ -54,12 +54,29 @@ body{
 }
 
 .contentPanel{
+    position: relative;
     background-color: whitesmoke;
     width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    & > .shivane{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-color: black;
+        color: white;
+        height: 30px;
+        width: 250px;
+        & > a > img{
+            height: 20px;
+            width: 20px;
+        }
+    }
     & > form{
         & > p{
             margin-left: 40px;
@@ -74,6 +91,7 @@ body{
             & > p{
                 margin: 10px 0px 10px 30px;
                 font-size: 1.5rem;
+                font-weight: bold;
             }
         }
         width: 90%;
@@ -85,33 +103,19 @@ body{
 .firstRow,.secondRow,.thirdRow{
     display: flex;
     font-size: 0.90rem;
-    justify-content: space-;
+
     & > div{
         margin: 10px;
         margin-left: 30px;
         display: flex;
         flex-direction: column;
+        & > label{
+            margin-bottom: 5px;
+        }
     }
     & > div:last-child{
         margin-left: 60px;
     }
-}
-
-
-/* this is to validate valid and invalid input */
-input{
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    outline: 1px solid #E5E7EB;
-}
-
-input:valid{
-    outline: 1px solid green;
-}
-
-input:invalid{
-    outline: 1px solid red;
 }
 
 a{
@@ -150,3 +154,17 @@ button[type = "reset"]{
     }
 }
 
+/* this is for checking the input validity */
+input{
+    border: none;
+    padding:5px;
+    border-radius: 3px;
+    outline:2px solid #E5E7EB;
+    &:focus{
+        outline: 2px solid blue;
+    }
+}
+
+input:invalid{
+    outline:2px solid red;
+}
