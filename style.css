@@ -165,6 +165,15 @@ input{
     }
 }
 
+
+
 input:invalid{
     outline:2px solid red;
+}
+
+.passwordError,.confirmPasswordError{
+    margin-top: 5px;
+    font-size: 0.70rem;
+    opacity: 0;
+    color: red;
 }
